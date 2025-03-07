@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <h2>Rock Paper Scissors</h2>
+      <div class="game-mode">
+        <button id="classicMode" class="mode-btn active">Classic</button>
+        <button id="bestOf3Mode" class="mode-btn">Best of 3</button>
+      </div>
+    </div>
+    <div class="allimages">
+      <div class="images magic" id="Rock">
+        <img src="assets/rock.png" class="image1 hover" />
+      </div>
+      <div class="images magic" id="Paper">
+        <img src="assets/paper.png" class="image2 hover" />
+      </div>
+      <div class="images magic" id="Scissors">
+        <img src="assets/scissors.png" class="image3 hover" />
+      </div>
+    </div>
+    <div class="score">
+      <div class="scoreyou">
+        <p id="score1">0</p>
+        <p>Your Score</p>
+      </div>
+      <div class="scorecomp">
+        <p id="score2">0</p>
+        <p>Comp Score</p>
+      </div>
+    </div>
+    <div class="msg magic">
+      <h3 class="hover">Start Your Game!!</h3>
+    </div>
+    <div class="game-controls">
+      <button id="resetBtn" class="control-btn">
+        <i class="fas fa-redo"></i> Reset Game
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

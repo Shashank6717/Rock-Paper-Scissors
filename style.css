@@ -1,0 +1,142 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+  min-height: 100vh;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.header {
+  height: 120px;
+  background-color: #0f1014;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+h2 {
+  text-align: center;
+  color: #fff;
+  font-family: cursive;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.game-mode {
+  display: flex;
+  gap: 1rem;
+}
+.mode-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  background: #2a2a2a;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.mode-btn.active {
+  background: #4caf50;
+}
+.allimages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  margin-top: 60px;
+  gap: 2.5rem;
+}
+.images {
+  height: 120px;
+  width: 120px;
+  background-color: #0f1014;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.score {
+  margin-top: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-bottom: 50px;
+}
+p {
+  font-size: 1.8rem;
+}
+#score1,
+#score2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+.msg {
+  margin: 20px 0;
+}
+h3 {
+  display: inline;
+  font-size: 25px;
+  background-color: #0f1014;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.last {
+  display: inline;
+}
+.hover:hover {
+  border: 5px solid #4caf50;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+.magic:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+.game-controls {
+  margin: 20px 0;
+}
+.control-btn {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.control-btn:hover {
+  background: #45a049;
+  transform: scale(1.05);
+}
+@keyframes winner {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.winner {
+  animation: winner 0.5s ease-in-out;
+}
